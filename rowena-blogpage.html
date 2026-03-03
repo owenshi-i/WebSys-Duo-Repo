@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rowena's Daily Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; }
+
+        header {
+            background: #1a6e5e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 32px;
+        }
+        header .logo { font-weight: bold; font-size: 1.2rem; }
+        header nav a { color: white; text-decoration: none; font-size: 0.95rem; margin-left: 16px; }
+
+        .blog-hero {
+            background: linear-gradient(135deg, #1a6e5e, #2eb89a);
+            color: white;
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+        .blog-hero h1 { font-size: 2rem; margin-bottom: 8px; }
+        .blog-hero p { font-size: 1rem; opacity: 0.9; }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 24px;
+            background: #1a6e5e;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .back-btn:hover { background: #2eb89a; }
+
+        .entry {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid #2eb89a;
+            overflow: hidden;
+            position: relative;
+        }
+        .entry-date {
+            font-size: 0.82rem;
+            color: #2eb89a;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .entry h2 {
+            font-size: 1.2rem;
+            color: #1a6e5e;
+            margin-bottom: 12px;
+        }
+        .entry p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 0.96rem;
+            margin-bottom: 12px;
+        }
+        .entry p:last-child { margin-bottom: 0; }
+
+        /* Read More button */
+        .read-btn {
+            display: inline-block;
+            background: #1a6e5e;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+        .read-btn:hover { background: #2eb89a; }
+
+        /* Preview text for the blog */
+        .preview {
+            max-height: 150px; /* height of preview */
+            overflow: hidden;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Student Stories</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student1.html">My Profile</a>
+        </nav>
+    </header>
+
+    <section class="blog-hero">
+        <h1>📓 Rowena's Daily Blog</h1>
+        <p>From lectures to leadership — one day at a time.</p>
+    </section>
+
+    <div class="blog-content">
+
+        <a href="student1.html" class="back-btn">← Back to My Profile</a>
+
+        <!-- Entry 1 -->
+        <div class="entry">
+            <div class="entry-date">March 3, 2026 - NOTE TO READERS</div>
+            <h2>My First Blog Entry</h2>
+            <div class="preview">
+                <p>This is my first official blog post for our project. I want to share the journey of how I started this portfolio and blog, and the challenges I faced along the way.</p>
+                <p>I found my duo partner on February 23. I had already started some preparations before I found her—I had created our repository, homepage, and student profiles for both of us, and I even shared the repo link with her. However, I wasn’t able to work on it immediately because I was dealing with an eye infection that lasted about a week. I had planned to start on Monday, but I had to return to the hospital for a follow-up check, which delayed my work further. Today is the first day I was able to fully manage my time and work on this blog. It was challenging at first, especially since this was my first time doing a project like this. I faced difficulties such as understanding site examples, organizing files, and figuring out the structure, but I gradually overcame them by researching, experimenting, and asking questions when needed.</p>
+                <p>Since I wasn’t able to post my daily blog entries on the days I missed, I plan to cover those days retrospectively by recalling what I did last week. I am determined to work hard and finish all the remaining blog entries before our project presentation. I am even willing to dedicate extra time to make up for the days I missed and ensure that my portfolio is complete and polished.</p>
+            </div>
+            <span class="read-btn" onclick="toggleRead(this)">Read More</span>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="entry">
+            <div class="entry-date">February 23, 2026 — Day 1 (Posted Late)</div>
+            <h2>Starting the Project</h2>
+            <div class="preview">
+                <p>Today I officially started working on our Web Systems and Design project that was assigned to us last Thursday, February 19. I didn’t have a duo partner for the past few days, so I wasn’t able to start immediately. Today I’ve found my partner, Elisha Faith Alcazar, I began creating our repository, homepage, and profile pages. I also shared the repository link with her so we could collaborate.</p>
+                <p>Since this was my first time working on a project like this, I spent some time learning how to set up the GitHub repository, create branches, and understand commits. I practiced making my first commits and pushing changes to the repository. To learn more and understand the process better, I also watched lots of tutorial videos. At first, it felt overwhelming and confusing, especially figuring out how to organize files and structure the project properly. But I gradually got the hang of it by experimenting, researching, and asking questions when needed.</p>
+                <p>At the same time, I was dealing with an eye infection, my eyes were swollen and painful, but I tried to work on the project anyway since I needed to cooperate with my partner. I was able to manage my condition just enough to start, and I instructed her on what tasks to do while we organized the work together.</p>
+                <p>Because of my condition, I also excused myself from class today, including both our Networking and Web Systems and Design sessions. In Web Systems, we had a quiz scheduled, but I wasn’t able to take it. I informed ma’am about my situation and asked when I could take the quiz so I can stay on track with my grades while continuing to work on the project.</p>
+                <p>Working on this project teaches us how important preparation, patience, and persistence are. It shows that even when facing challenges like being sick, we can still make progress if we focus on what we can do. Watching tutorials and practicing hands-on helps us understand new skills better, and collaborating with a partner requires clear communication and guidance. This experience shows that learning and perseverance go hand in hand when completing a project successfully.</p>
+            </div>
+            <span class="read-btn" onclick="toggleRead(this)">Read More</span>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="entry">
+            <div class="entry-date">February 24, 2026 — Day 2 (Posted Late)</div>
+            <h2>Struggling Through the Day</h2>
+            <div class="preview">
+                <p>Today, we had our Information Technology class and were supposed to have a quiz. Unfortunately, because of my eye condition, I couldn’t see well enough to attend or take it. I excused myself from class and asked Sir when I could take the quiz later to stay on track with my grades.  
+                My condition made it really hard to do anything today. I couldn’t move around much or even use my gadgets properly...</p>
+                <p>Even simple things like getting my food became impossible without help. I’m grateful that my family was there to assist me throughout the day, it made a huge difference.  
+                Thankfully, our asynchronous class allowed me to rest. Given my condition, I wouldn’t have learned anything if I had tried to participate. I needed to focus on recovery, and I’m glad I could take the time to rest without falling behind in class.</p> 
+                <p>Today reminded me how important it is to listen to my body, take care of myself, and accept help when needed, even while trying to keep up with schoolwork.</p>
+            </div>
+            <span class="read-btn" onclick="toggleRead(this)">Read More</span>
+        </div>
+
+        <!-- Entry 4 -->
+        <div class="entry">
+            <div class="entry-date">February 25, 2026 — Day 3 (Posted Late)</div>
+            <h2>A Day of Rest and Reality</h2>
+
+            <div class="preview">
+                <p>In observance of the EDSA People Power Revolution anniversary, our classes were suspended and shifted to asynchronous mode until Friday. I was really thankful for this because it gave me time to rest and finally focus on my check-up.
+                    At this point, my eye condition had already worsened, I honestly had no idea what happened in my classes because I wasn’t able to attend.</p>
+                <p>We decided to have my eyes checked, and we spent almost the whole afternoon at the clinic because of the long lines. After the check-up, the doctor gave me a prescription for several medications. The total cost almost reached more than ₱2,000, which was really heavy for us financially.</p>
+                <p>We didn’t have enough money to buy everything at once, so we decided to purchase the medicines little by little. At that time, we didn’t bring enough cash, so I was only able to take my medicine around 8 PM when my father arrived from work and bought it for me.</p>
+                <p>I was also thankful because my uncle had leftover medicine that was the same as what was prescribed to me. He previously had an eye infection too and went to the same clinic. Because of that, we were able to save more than ₱700, and I only needed to buy the remaining medicines gradually.</p>
+                <p>This experience taught me how important it is to be grateful even during difficult times, to appreciate the help of family, and to understand that health should always come first. It also reminded me that rest is sometimes necessary, not a weakness.</p>
+            </div>
+
+            <span class="read-btn" onclick="toggleRead(this)">Read More</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Student Stories Blog | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleRead(btn) {
+            const preview = btn.previousElementSibling;
+            if(preview.style.maxHeight) {
+                preview.style.maxHeight = null;
+                btn.innerText = "Read More";
+            } else {
+                preview.style.maxHeight = preview.scrollHeight + "px";
+                btn.innerText = "Read Less";
+            }
+        }
+    </script>
+
+</body>
+</html>
