@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elisha Faith Alcazar - Student Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; }
+
+        header {
+            background: #1a6e5e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 32px;
+        }
+        header .logo { font-weight: bold; font-size: 1.2rem; }
+        header nav a { color: white; text-decoration: none; font-size: 0.95rem; }
+
+        .profile-hero {
+            background: linear-gradient(135deg, #1a6e5e, #2eb89a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        .profile-hero img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 16px;
+        }
+        .profile-hero h1 { font-size: 2rem; margin-bottom: 8px; }
+        .profile-hero p { font-size: 1rem; opacity: 0.9; }
+
+        .blog-content {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .blog-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .blog-section h2 {
+            color: #1a6e5e;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            border-left: 4px solid #2eb89a;
+            padding-left: 12px;
+        }
+        .blog-section p { color: #444; line-height: 1.8; font-size: 0.97rem; }
+
+        .tag {
+            display: inline-block;
+            background: #e0f5f0;
+            color: #1a6e5e;
+            border-radius: 20px;
+            padding: 4px 14px;
+            margin: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .sem-block { margin-bottom: 28px; }
+        .sem-block h3 {
+            color: #2eb89a;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        th { background: #1a6e5e; color: white; padding: 10px 12px; text-align: left; }
+        td { padding: 9px 12px; border-bottom: 1px solid #eee; color: #444; }
+        tr:hover td { background: #f0faf7; }
+
+        .quote-box {
+            background: linear-gradient(135deg, #1a6e5e, #2eb89a);
+            color: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin: 30px 0 10px;
+            background: #1a6e5e;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .back-btn:hover { background: #2eb89a; }
+
+        .daily-btn {
+            display: block;
+            text-align: center;
+            background: linear-gradient(135deg, #1a6e5e, #2eb89a);
+            color: white;
+            padding: 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .daily-btn:hover { opacity: 0.9; }
+
+        footer {
+            background: #1a6e5e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Student Stories</div>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+
+    <section class="profile-hero">
+        <img src="images/student1.jpg" alt="Rowena Acabado">
+        <h1>Rowena Acabado</h1>
+        <p>2nd Year BSIT Student · Deputy Secretary General · Bicol University</p>
+    </section>
+
+    <div class="blog-content">
+
+        <a href="index.html" class="back-btn">← Back to Home</a>
+
+        <!-- Personal Info -->
+        <div class="blog-section">
+            <h2>About Me</h2>
+            <p>Hi! I'm <strong>Rowena O. Acabado</strong>, a 20-year-old second-year BSIT student at Bicol University. I was born on August 7, 2005, making me a Leo, and my Chinese zodiac sign is the Rooster. I have a mix of outgoing and introverted personality traits, which helps me adapt to different situations. We currently live in P-2 Upper Biogssacan, Guinobatan, Albay, where I enjoy spending time with family and pursuing my passions.</p>
+        </div>
+
+        <!-- Family -->
+        <div class="blog-section">
+            <h2>Family</h2>
+            <p>I come from a loving family. My mother, <strong>Marife Acabado</strong>, and my father, <strong>Arvin Acabado</strong>, have always guided and supported me in everything I do. I am the eldest among my siblings, which include my brother <strong>Radim Acabado</strong>, my sister <strong>Cathlyn Acabado</strong>, and my youngest sister <strong>Nina Fatima Acabado</strong>. Spending time with them, sharing experiences, and learning from each other has shaped me into the person I am today.</p>
+        </div>
+
+        <!-- Organization Role -->
+        <div class="blog-section">
+            <h2>Organization Role</h2>
+            <p>I serve as the <strong>Deputy Secretary General</strong> in <strong>CIRCUITS</strong> (Circle of Unified Information Technology Students), an IT department organization. In this role, I assist the Secretary General by documenting meetings, managing correspondence, organizing events, keeping accurate records, and ensuring smooth communication among members. This position has strengthened my organizational, communication, and leadership skills.</p>
+        </div>
+
+        <!-- Academics / Skills -->
+        <div class="blog-section">
+            <h2>Academics & Skills</h2>
+            <p>I excel in subjects that allow me to express my ideas and reflect on real-world situations. I enjoy opportunities to showcase my thoughts, solve problems, and engage in critical thinking. My technical skills include programming in <strong>C and Java</strong>, and web development using <strong>HTML and CSS</strong>. These skills help me pursue projects both academically and personally.</p>
+        </div>
+
+        <!-- Hobbies & Interests -->
+        <div class="blog-section">
+            <h2>Hobbies & Interests</h2>
+            <p>Outside academics and organizational work, I enjoy <strong>cooking</strong> and experimenting with new recipes, <strong>coding</strong> and working on tech-related projects, <strong>playing volleyball</strong> with my brother and cousins, and <strong>travelling</strong> and going on <strong>joy rides</strong>. These activities allow me to balance work and leisure while learning new skills and staying energized.</p>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote-box">
+            "I balance my quiet focus with bold action, turning challenges into opportunities for growth."
+        </div>
+
+        <!-- Goals -->
+        <div class="blog-section">
+            <h2>Goals & Dreams</h2>
+            <p>My academic and career goal is to graduate as a competent IT professional, constantly improving my technical skills while applying my knowledge to meaningful projects. Personally, I aim to grow as a leader and communicator, maintaining a healthy balance between work and life. Within CIRCUITS, I strive to support the organization’s mission, ensure smooth operations, and mentor fellow students to help them succeed in their own roles.</p>
+        </div>
+
+        <!-- Daily Blog Button -->
+        <a href="rowena-blog.html" class="daily-btn">📓 Read My Daily Blog →</a>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Student Stories Blog | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
